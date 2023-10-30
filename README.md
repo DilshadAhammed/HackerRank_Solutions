@@ -9,19 +9,17 @@
 
 ---
 
-## ACM ICPC Team
+## Extra Long Factorials
 
-- [Solution](./ACM%20ICPC%20Team/ACM%20ICPC%20Team.py)
+- [Solution](./Extra%20Long%20Factorials/ExtraLongFactorials.py)
 
 ### - Explanation:
 
-        1.The function iterates through all possible pairs of people using nested loops.
-
-        2.For each pair, it calculates the number of topics they know by performing a bitwise OR operation (int(topic[i], 2) | int(topic[j], 2)) to find the combined topics, then counts the number of set bits (1s) using bin(...).count('1').
-
-        3.If the current pair knows more topics than the previous maximum, it updates the max_topics and resets the max_teams count to 1. If the current pair knows the same number of topics as the maximum, it increments the max_teams count.
-
-        4.Finally, the function returns a list containing the maximum number of topics and the number of teams knowing that maximum number of topics.
+        1. result = 1: We initialize the result variable to 1 because in factorials, any number multiplied by 1 is itself. Setting the initial value to 1 ensures that the multiplication process starts correctly.
+        2. for i in range(1, n + 1): This for loop iterates through the numbers from 1 to n, inclusive. In other words, it considers all the integers from 1 to the input number n.
+        3. result *= i: Inside the loop, the current result value is multiplied by the loop variable i. This operation accumulates the factorial by multiplying the current result with the next number in the sequence.
+        4. After the loop completes, result contains the factorial of the input number n. It stores the total product of all integers from 1 to n.
+        5. print(result): This line of code prints the calculated factorial. The print function outputs the final result, which is the factorial of the input number n.
 ---
 
 ## Apple and Orange
