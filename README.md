@@ -92,23 +92,13 @@ If a double jump is not safe or not within bounds, perform a single jump by incr
         6. Once the loop ends, return the total number of jumps, which represents the minimum number of jumps required to reach the end of the cloud sequence.
 ---
 
-## Minimum Distance
+## CamelCase
 
-- [Solution](./MinimumDistance/MinimumDistance.py)
+- [Solution](./CamelCase/CamelCase.py)
 
 ### - Explanation:
 
-        1. Create a dictionary element_indices to store the most recent index of each element encountered in the array a.
-
-        2. Initialize the min_distance variable to a large value (float('inf')).
-
-        3. Iterate through the array a using enumeration to keep track of the indices.
-
-        4. For each element, check if it has been encountered before (num in element_indices). If it has, calculate the distance between the current index and the most recent index where the element was seen (i - element_indices[num]). Update min_distance with the smaller value between the current minimum distance and the calculated distance.
-
-        5. Update the most recent index of the current element in the element_indices dictionary.
-
-        6. After iterating through the array, if min_distance remains as the initial large value, it means no equal elements were found, so return -1. Otherwise, return the calculated min_distance representing the minimum distance between equal elements.
+        In summary, the camelcase function calculates the number of words in a camel case string by counting the uppercase letters, assuming each uppercase letter signifies the start of a new word.
 ---
 
 ## Save The Prisoner
