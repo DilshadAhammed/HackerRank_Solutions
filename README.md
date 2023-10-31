@@ -28,16 +28,7 @@
 
 ### - Explanation:
 
-        1. Initialize apple_count and orange_count variables to keep track of the number of apples and oranges within the range [s, t].
-
-        2. Calculate the actual landing positions of apples and oranges by adding their distances (apples and oranges arrays) to the respective trees (a and b).
-
-        3. Iterate through the apple positions and count how many fall within the specified range [s, t]. Increment apple_count for each apple that falls within the range.
-
-        4. Iterate through the orange positions and count how many fall within the specified range [s, t]. Increment orange_count for each orange that falls within the range.
-
-        5. Print the counts of apples and oranges that fall within the specified range.
-
+        The function iterates through the lists of apples and oranges, adjusting their positions based on the tree positions (a and b). If the adjusted position falls within the range from s to t (inclusive), it increments the respective fruit count.
 
 ---
 
