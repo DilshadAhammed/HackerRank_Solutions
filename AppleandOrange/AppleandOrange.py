@@ -22,18 +22,16 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
     # Write your code here
     apple_count = 0
     orange_count = 0
-    
-    
-    apple_positions = [a + d for d in apples]
-    orange_positions = [b + d for d in oranges]
-    
-    for position in apple_positions:
-        if s <= position <= t:
+    for i in range(lem(apples)):
+        apples[i] += a
+        if apples[i] >= s and apples[i] <= t:
             apple_count += 1
     
-    for position in orange_positions:
-        if s <= position <= t:
+    for i in range(len(oranges)):
+        oranges[i] += b
+        if oranges[i] >= s and oranges[i] <= t:
             orange_count += 1
+    
     print(apple_count)
     print(orange_count)
 if __name__ == '__main__':
@@ -63,17 +61,7 @@ if __name__ == '__main__':
 
 #Explanation:
 """
-1. Initialize apple_count and orange_count variables to keep track of the number of apples and oranges within the range [s, t].
-
-2. Calculate the actual landing positions of apples and oranges by adding their distances (apples and oranges arrays) to the respective trees (a and b).
-
-3. Iterate through the apple positions and count how many fall within the specified range [s, t]. Increment apple_count for each apple that falls within the range.
-
-4. Iterate through the orange positions and count how many fall within the specified range [s, t]. Increment orange_count for each orange that falls within the range.
-
-5. Print the counts of apples and oranges that fall within the specified range.
-
-This logic ensures that the function accurately counts the apples and oranges that land within the given range along the straight line.
+The function iterates through the lists of apples and oranges, adjusting their positions based on the tree positions (a and b). If the adjusted position falls within the range from s to t (inclusive), it increments the respective fruit count.
 """
 
 
